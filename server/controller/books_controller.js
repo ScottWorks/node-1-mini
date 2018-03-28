@@ -18,7 +18,7 @@ module.exports = {
   },
 
   update: (request, response) => {
-    let index = 0;
+    let index = null;
 
     books.forEach((elem, idx) => {
       if (elem.id === Number(request.params.id)) {
@@ -36,7 +36,7 @@ module.exports = {
   },
 
   delete: (request, response) => {
-    let index = 0;
+    let index = null;
 
     books.forEach((elem, idx) => {
       if (elem.id === Number(request.params.id)) {
